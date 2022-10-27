@@ -1,0 +1,135 @@
+@media (max-width: 1399px){
+    .header-nav-menu {
+        display: none;
+    }
+    .header-account-icons {
+        display: none;
+    }
+    .header-inner{
+        justify-content: left;
+        padding: 15px 20px;
+    }
+    .clients-inner,.clients-inner,.about-company-inner{
+        padding: 60px 20px;
+    }
+    .about-our-company-inner{
+        padding: 100px 20px;
+    }
+    .menu-burger{
+        display: block;
+    }
+    .main-inner{
+        padding: 85px 20px;
+    }
+    .certificate-inner, .benefits-inner, .services-inner{
+        padding: 60px 20px;
+    }
+    .certificate-item{
+        margin-right: 0;
+    }
+    .footer-inner{
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 1200px){
+    .certificate-cards{
+        display:grid;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px){
+    .txt-block-title,.services-title,.benefits-title,.clients-title,.certificate-title{
+        font-size: 25px;
+    }
+    .main-title {
+        font-size: 50px;
+    }
+    .header-number, .header-whatsapp{
+        display: none;
+    }
+    .about-company-inner{
+        padding: 100px 20px;
+    }
+    .benefits-cards{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        justify-content: center;
+    }
+    .services-cards{
+        grid-template-columns: auto;
+    }
+    .footer-nav-menu li{
+        display: block;
+        padding-bottom: 10px;
+    }
+    .about-our-company-inner{
+        display: grid;
+        justify-content: center;
+    }
+    .services-page-about-services-container{
+        grid-template-columns: auto;
+    }
+    .services-page-page-services-icons{
+        padding-left: 70px;
+    }
+}
+
+@media (max-width: 580px){
+    .about-img-block{
+        padding-right: 0;
+    }
+    .about-img-block img{
+        width: 100%;
+    }
+    .main-title, .about-company-title, .services-page-title{
+        font-size: 36px;
+        line-height: 60px;
+    }
+    .about-or-company-contactots{
+        top: 50px;
+    }
+    .main-btn{
+        display: block;
+    }
+    .__submain-btn{
+        display: block;
+        padding: 20px 32px;
+    }
+    .__submain-margin{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .benefits-cards {
+        grid-template-columns: auto;
+        gap: 30px
+    }
+    .certificate-content{
+        width: 290px;
+    }
+    .footer-inner{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 375px){
+    .main-title{
+        font-size: 30px;
+    }
+    .footer-inner{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .footer-contact-link{
+        padding-left: 25px;
+    }
+    .footer-contact-link::before{
+        left: 0;
+    }
+    .footer-contacts{
+        padding: 15px 0;
+    }
+}
