@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/fonts/ubuntu.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/modal.js" defer></script>
     <title>ABB</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
     <header class="header-wrapper">
         <div class="header-inner container">
             <div class="header-logo">
-                <a href="index.html"><img src="assets/img/header/header-logo.png" alt="header-logo"></a>   
+                <a href="index.html"><img src="assets/img/header/header-logo.svg" alt="header-logo"></a>   
             </div>
             <div class="header-number">
                 <p class="header-call-number">+7 701 770 15 79</p>
@@ -38,7 +40,7 @@
                 <li><a href="about-company.html">О компании</a></li>
                 <li><a href="services.html">Услуги</a></li>
                 <li><a href="#">Сертификаты</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </div>
             <div class="header-account-icons">
                 <img src="assets/img/header/user-icon.svg" class="user-icon" alt="user">
@@ -48,11 +50,36 @@
         </div>
     </header>
 
+    <div class="modal-wrapper">
+        <div class="modal-inner">
+            <div class="modal-inner-container">
+                <div class="modal-inner-title">Если у Вас есть вопросы по продукции или услугам, напишите нам, и наши специалисты ответят в ближайшее время. </div>
+                <form action="" class="modal-form">
+                    <input type="text" class="input-name" placeholder="Ваше имя">
+                    <input type="email" class="input-email" placeholder="Ваш e-mail">
+                    <input type="textarea" class="input-text-message" placeholder="Сообщение">
+                    <input type="submit" class="input-submit-btn" value="Отправить">    
+                </form>
+                <img src="assets/img/x.svg" alt="close-modal" class="close-modal">            
+            </div>
+        </div>
+    </div>
+
     <div class="menu-burger">
         <div class="menu-burger-container">
             <span></span>
             <span></span>
             <span></span>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <li><a href="index.html"> Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="about-company.html">О компании</a></li>
+            <li>Серификаты</li>
+            <li class="last-item"><a href="contacts.html">Контакты</a></li> 
         </div>
     </div>
 
@@ -63,7 +90,7 @@
             </div>
             <div class="main-buttons">
                 <a href="" class="main-btn">Перейти в каталог</a>
-                <a href="" class="main-btn __submain-btn __submain-margin">Написать нам</a>
+                <a href="javascript:void(0)" class="main-btn __submain-btn __submain-margin">Написать нам</a>
             </div>
         </div>
     </section>
@@ -89,22 +116,22 @@
             </div>
             <div class="services-cards">
                 <div class="service-card-item">
-                    <div class="service-card-img"><img src="assets/img/services/card_item1.png" alt="card-item-img"></div>
+                    <div class="service-card-img"><img src="assets/img/services/card_item1.svg" alt="card-item-img"></div>
                     <div class="service-card-title">Автоматизация систем управления КИПиА</div>
                     <div class="service-card-conent">Проводим работы по монтажу контрольно-измерительных приборов и автоматики. </div>
                 </div>
                 <div class="service-card-item">
-                    <div class="service-card-img"><img src="assets/img/services/card_item2.png" alt="card-item-img"></div>
+                    <div class="service-card-img"><img src="assets/img/services/card_item2.svg" alt="card-item-img"></div>
                     <div class="service-card-title"> Монтажные и пусконаладочные работы</div>
                     <div class="service-card-conent">Пусконаладочными работы включают проверку, настройку и испытания электрооборудования с целью обеспечения электрических параметров и режимов, заданных проектом. </div>
                 </div>
                 <div class="service-card-item">
-                    <div class="service-card-img"><img src="assets/img/services/card_item3.png" alt="card-item-img"></div>
+                    <div class="service-card-img"><img src="assets/img/services/card_item3.svg" alt="card-item-img"></div>
                     <div class="service-card-title"> Сервисное обслуживание и ремонт</div>
                     <div class="service-card-conent">ТОО «Icon Management» является авторизованным дистрибьютором и имеет сертификаты на проведение гарантийного и постгарантийного обслуживания оборудования ABB.  </div>
                 </div>
                 <div class="service-card-item">
-                    <div class="service-card-img"><img src="assets/img/services/card_item4.png" alt="card-item-img"></div>
+                    <div class="service-card-img"><img src="assets/img/services/card_item4.svg" alt="card-item-img"></div>
                     <div class="service-card-title">  Изготовление электрощитовой продукции</div>
                     <div class="service-card-conent">ТОО "Icon Management" изготавливает электрощитовую продукцию как по собственным проектам, так и по проекту заказчика.</div>
                 </div>
@@ -232,11 +259,10 @@
                 <li><a href="services.html">Услуги</a></li>
                 <li><a href="about-company.html">О компании</a></li>
                 <li>Серификаты</li>
-                <li class="last-item">Контакты</li>
+                <li class="last-item"><a href="contacts.html">Контакты</a></li>
             </div>
         </div>
     </footer>
     
-<script src="assets/js/script.js"></script>
 </body>
 </html>

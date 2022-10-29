@@ -21,7 +21,7 @@
     .main-inner{
         padding: 85px 20px;
     }
-    .certificate-inner, .benefits-inner, .services-inner{
+    .certificate-inner, .benefits-inner, .services-inner,.contacts-page-inner{
         padding: 60px 20px;
     }
     .certificate-item{
@@ -75,6 +75,12 @@
     .services-page-page-services-icons{
         padding-left: 70px;
     }
+    .contacts-page-inner{
+        flex-direction: column;
+    }
+    .contacts-page-map{
+        width: 100%;
+    }
 }
 
 @media (max-width: 580px){
@@ -113,6 +119,9 @@
         display: grid;
         grid-template-columns: auto auto;
     }
+    .modal-inner-container{
+        padding: 41px 30px;
+    }
 }
 
 @media (max-width: 375px){
@@ -131,5 +140,8 @@
     }
     .footer-contacts{
         padding: 15px 0;
+    }
+    .modal-inner-container{
+        padding: 41px 15px;
     }
 }
