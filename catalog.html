@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fonts/ubuntu.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+    <title>ABB</title>
+</head>
+<body>
+
+    <header class="header-wrapper">
+        <div class="header-inner container">
+            <div class="header-logo">
+                <a href="index.html"><img src="assets/img/header/header-logo.svg" alt="header-logo"></a>   
+            </div>
+            <div class="header-number">
+                <p class="header-call-number">+7 701 770 15 79</p>
+                <p class="header-work-time">Пн-пт 9:00-18:00</p>
+            </div>
+            <div class="header-whatsapp">
+                <a href="#"><img src="assets/img/header/whatsapp.svg" alt="Whatsapp header-logo" class="header-whatsapp-icon"></a>
+                <p class="header-whatsapp-action">Задать вопрос</p>
+            </div>
+            <div class="header-nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li class="dropdown">
+                    <a href="catalog.html" class="catalog-list">Каталог продукции</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-link">Низковольтное оборудование</a>
+                        <a href="#" class="dropdown-link">Преобразователи частоты</a>
+                        <a href="#" class="dropdown-link">Электродвигатели</a>
+                        <a href="#" class="dropdown-link">Системы автоматизации и КПИА</a>
+                    </div>
+                </li>
+                <li><a href="about-company.html">О компании</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="#">Сертификаты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </div>
+            <div class="header-account-icons">
+                <img src="assets/img/header/user-icon.svg" class="user-icon" alt="user">
+                <img src="assets/img/header/shopping-cart.svg" alt="cart">
+
+            </div>
+        </div>
+    </header>
+
+    <div class="modal-wrapper">
+        <div class="modal-inner">
+            <div class="modal-inner-container">
+                <div class="modal-inner-title">Если у Вас есть вопросы по продукции или услугам, напишите нам, и наши специалисты ответят в ближайшее время. </div>
+                <form action="" class="modal-form">
+                    <input type="text" class="input-name" placeholder="Ваше имя">
+                    <input type="email" class="input-email" placeholder="Ваш e-mail">
+                    <input type="textarea" class="input-text-message" placeholder="Сообщение">
+                    <input type="submit" class="input-submit-btn" value="Отправить">    
+                </form>
+                <img src="assets/img/x.svg" alt="close-modal" class="close-modal">            
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-burger">
+        <div class="menu-burger-container">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <li><a href="index.html"> Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="about-company.html">О компании</a></li>
+            <li>Серификаты</li>
+            <li class="last-item"><a href="contacts.html">Контакты</a></li> 
+        </div>
+    </div>
+
+    <section class="catalog-wrapper">
+        <div class="catalog-inner">
+            <span>Главная</span><span> / </span><span class="category-child">Каталог</span>
+            <div class="catalog-title">Каталог</div>
+        </div>
+    </section>
+
+    <section class="catalog-content-wrapper">
+        <div class="catalog-content-inner">
+            <div class="catalog-content-container">
+                <div class="catalog-nav-block">
+                    <div class="catalog-nav-block-container">
+                        <details>
+                            <summary>Низковольтное оборудование</summary>
+                            <div class="child-category">
+                                <details>
+                                    <summary>Автоматические выключатели</summary>
+                                    <div class="child-text"><a href="javascript: void(0);" class="child-text">Something small enough to escape casual notice.</a></div>
+                                    <div class="child-text">Силовые автоматические выключатели в литом корпусе Тмах.</div>
+                                    <div class="child-text">Силовые автоматические выключатели воздушные Емах</div>
+                                    <div class="child-text">Автоматические выключатели защиты двигателя</div>
+                                </details>        
+                            </div>
+                            <div class="child-category">
+                                <details>
+                                    <summary>Пускорегулирующие устройства</summary>
+                                    <div class="child-text">Автоматические выключатели защиты двигателя</div>
+                                    <div class="child-text">Контакторы (пускатели)</div>
+                                    <div class="child-text">Тепловые реле перегрузки</div>
+                                    <div class="child-text">Электронные реле перегрузки</div>
+                                    <div class="child-text">Устройства плавного пуска УПП</div>
+                                </details>        
+                            </div>
+                            <div class="child-category">
+                                <details>
+                                    <summary>Выключатели нагрузки (Рубильники)</summary>
+                                    <div class="child-text">Рубильники с ручным управлением</div>
+                                    <div class="child-text">Реверсивные переключатели</div>
+                                    <div class="child-text">Переключатели с моторным приводом</div>
+                                    <div class="child-text">Кулачковые переключатели</div>
+                                    <div class="child-text">АВР (автоматический ввод резерва) TruONE</div>
+                                </details>        
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Преобразователи частоты</summary>
+                            <div class="child-text">Something small enough to escape casual notice.</div>
+                        </details>
+                        <details>
+                            <summary>Низковольтное оборудование</summary>
+                            <div class="child-text">Something small enough to escape casual notice.</div>
+                        </details>
+                        <details>
+                            <summary>Системы автоматизации 
+                                и КПИА</summary>
+                            <div class="child-text">Something small enough to escape casual notice.</div>
+                        </details>   
+                    </div>             
+                </div>
+                <div class="catalog-cards">
+                    <div class="catalog-card-item">
+                        <div class="catalog-card-img">
+                            <img src="assets/img/!catalog/catalog-item.png" alt="">
+                        </div>
+                        <div class="catalog-item-title">Низковольтное 
+                            оборудование</div>
+                    </div>
+                    <div class="catalog-card-item">
+                        <div class="catalog-card-img">
+                            <img src="assets/img/!catalog/catalog-item.png" alt="">
+                        </div>
+                        <div class="catalog-item-title">Преобразователи 
+                            частоты</div>
+                    </div>
+                    <div class="catalog-card-item">
+                        <div class="catalog-card-img">
+                            <img src="assets/img/!catalog/catalog-item.png" alt="">
+                        </div>
+                        <div class="catalog-item-title">Электродвигатели</div>
+                    </div>
+                    <div class="catalog-card-item">
+                        <div class="catalog-card-img">
+                            <img src="assets/img/!catalog/catalog-item.png" alt="">
+                        </div>
+                        <div class="catalog-item-title">Системы автоматизации 
+                            и КПИА</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-wrapper">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="assets/img/header/header-logo.png" alt="logo">
+            </div>
+            <div class="footer-contacts">
+                <p class="footer-contact-link"><a href="tel:+77017701579">+7 701 770 15 79</a></p>
+                <p class="footer-contact-link __whatsapp">+7 701 770 15 79</p>
+                <p class="footer-contact-link __email"><a href="mailto:sales@i-m.kz">sales@i-m.kz</a></p>
+                <p class="footer-contact-link __geo"> г. Актау, 10 мкр.,  зд.10  оф. №7</p>
+            </div>
+            <div class="footer-nav-menu">
+                <li><a href="index.html"> Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about-company.html">О компании</a></li>
+                <li>Серификаты</li>
+                <li class="last-item"><a href="contacts.html">Контакты</a></li>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

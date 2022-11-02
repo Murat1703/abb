@@ -41,6 +41,7 @@ html, body{
     padding: 0 50px;
     margin: 0 auto;
 }
+/*Основная страница*/
 .header-inner{
     padding: 15px 50px;
     display: flex;
@@ -294,11 +295,31 @@ html, body{
     margin-left: 10px;
 }
 .about-company-inner{
-    padding: 100px 50px 100px 80px;
+    padding: 91px 50px 75px 80px;
     display: flex;
 }
 .about-img-block{
     padding-right: 60px;
+    position: relative;
+}
+.about-img-text-wrapper{
+    top: 120px;
+    left: 50px;
+    position: absolute;
+    display: block;
+    gap: 15px;
+}
+.about-img-text{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 30px;
+}
+p.company-age{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 145.9%;  
+    color: rgba(248, 42, 42, 0.96);    
 }
 .about-txt-block{
     max-width: 498px;
@@ -314,8 +335,9 @@ hr{
     display: block;
     margin: 30px 0;
     width: 69px;
-    height: 0px;   
-    border: 2px solid rgba(248, 42, 42, 0.96);    
+    height: 2px;   
+    background: rgba(248, 42, 42, 0.96); 
+    border: rgba(248, 42, 42, 0.96); ;   
 }
 .txt-block-content{
     font-weight: 400;
@@ -436,9 +458,18 @@ hr{
     padding-bottom: 40px;
 }
 .clients-cards{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     justify-content: center;
+}
+.client-card-item:nth-child(13){
+    grid-column-end: 5;
+}
+.client-card-item:nth-child(12){
+    grid-column-end: 4;
+}
+.client-card-item:nth-child(11){
+    grid-column-end: 3;
 }
 .certificate-inner{
     max-width: 1015px;
@@ -500,26 +531,27 @@ hr{
     color: #282828;   
     position: relative;
     padding-bottom: 10px;
+    padding-left: 30px;
 }
 .footer-contact-link::before{
     position: absolute;
     content: url('../img/footer/phone.svg');
-    left: -28px;
+    left: 0;
 }
 .__whatsapp:before{
     position: absolute;
     content: url('../img/footer/whatsapp.svg');
-    left: -28px; 
+    left: 0;
 }
 .__email::before{
     position: absolute;
     content: url('../img/footer/mail.svg');
-    left: -28px; 
+    left: 0;
 }
 .__geo::before{
     position: absolute;
     content: url('../img/footer/map-pin.svg');
-    left: -28px; 
+    left: 0;
 }
 .footer-nav-menu li{
     list-style: none;
@@ -529,12 +561,14 @@ hr{
 li.last-item{
     padding-right: 0;
 }
+/*Страница о Компании*/
 .about-company{
     background: url('../img/!about_compnay/bg.png') no-repeat center;
 }
-.about-company-inner{
+.about-company-our-inner{
     margin: 0 auto;
     display: block;
+    padding: 100px 50px 100px 80px;
 }
 .about-company-title{
     font-weight: 500;
@@ -544,12 +578,13 @@ li.last-item{
     text-transform: uppercase; 
     color: #282828;  
 }
-.about-our-company-inner{
+.about-our-company-main-inner{
     display: block;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 60px 20px;
     max-width: 1100px;
     display: flex;
+    gap: 24px;
 }
 .about-text-block{
     max-width: 535px;
@@ -583,6 +618,7 @@ li.last-item{
     top:150px;
     z-index: 9;
 }
+/*Страница услуги*/
 .services-page-wrapper{
     background: linear-gradient(rgba(202, 202, 202, 0.5), rgba(202, 202, 202, 0.5)),url('../img/!services/services-bg.png') no-repeat center;
 }
@@ -603,11 +639,12 @@ li.last-item{
     margin: 0 auto;
     max-width: 1440px;
     display: block;
-    padding: 90px 20px;
+    padding: 90px 50px;
 }
 .services-page-about-services-container{
     display: grid;
     grid-template-columns: auto auto;
+    gap: 145px;
 }
 .services-page-services-text{
     max-width: 538px;
@@ -655,12 +692,13 @@ p.services-page-service-icon.__electro::before{
     left: -90px;
     content: url('../img/!services/electro.svg');
 }
+/*Страница контактов*/
 .contacts-page-inner{
-    padding: 100px 50px;
+    padding: 100px 50px 100px 50px;
     margin: 0 auto;
     max-width: 1440px;
     display: flex;
-    gap: 40px;
+    gap: 56px;
 }
 .contacts-page-contacts{
     max-width: 315px;
@@ -680,33 +718,131 @@ p.services-page-service-icon.__electro::before{
 }
 .contacts-page-number{
     position: relative;
-    padding-left: 20px;
-}
-.contacts-page-number{
-    position: relative;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 .contacts-page-map{
     margin-top: -20px;
     width: 985px;
     height: 485px;
-    background: #615151;
 }
 .contacts-page-number::before{
     position: absolute;
-    content: url('../img/!contacts-page/phone.svg');
+    content: url('../img/!contacts-page/phone-red.svg');
     align-items: center;
     top: 4px;
-    left: -5px;
+    left: 0;
 }
 .contacts-page-location{
     position: relative;
-    padding-left: 20px;
+    padding-left: 30px;
+    max-width: 255px;
 }
 .contacts-page-location::before{
     position: absolute;
-    content: url('../img/!contacts-page/geo.svg');
+    content: url('../img/!contacts-page/geo-red.svg');
     align-items: center;
     top: 0px;
-    left: -5px;    
+    left: 0;    
+}
+.catalog-inner{
+    padding: 40px 50px;
+}
+.catalog-inner span{
+    font-size: 14px;
+    line-height: 208.4%;  
+    color: #282828;    
+}
+span.category-child{
+    color: #6D6D6D;
+}
+.catalog-title{
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 145.9%;
+    color: #282828;
+}
+
+.catalog-content-inner{
+    padding: 30px 50px 200px 50px;
+}
+
+.catalog-nav-block-container{
+    list-style: none;
+    max-width: 203px;
+    background: #EFEFEF;
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+}
+.catalog-content-container{
+    display: flex;
+}
+.catalog-cards{
+    padding-left: 225px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.catalog-card-item{
+    width: 203px;
+    height: 257px;
+    border: 1px solid #B6B6B6;
+}
+.catalog-card-img{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+.catalog-item-title{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+}
+details{
+    position: relative;
+}
+details > summary {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-bottom: 1px solid #FFFFFF;
+    list-style-type: none;
+    position: relative;
+}
+
+summary::after{
+    content: url('../img/!catalog/arrow-down.svg');
+    position: absolute;
+    right: 10px;
+}
+details[open] > summary::after{
+    content: url('../img/!catalog/arrow-up.svg');
+}
+details[open] > summary{
+    color: #fff;
+    background: red;
+}
+.__spoiler-open {
+    background-color: red;
+}
+.__spoiler-open details[open] > summary #text {
+    background-color: #232536;
+}
+.child-text{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.child-category details[open] > summary{
+    color: red;
+    background: #EFEFEF;
+}
+.child-category details[open] > summary::after{
+    content: url('../img/!catalog/arrow-up-red.svg');
 }

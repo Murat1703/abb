@@ -5,3 +5,5 @@ burgerMenu.addEventListener('click', () => {
     burgerMenuContainer.classList.toggle('__open');
     mobileMenu.classList.toggle('___mobile');
 })
+
+  

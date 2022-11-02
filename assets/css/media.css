@@ -9,7 +9,7 @@
         justify-content: left;
         padding: 15px 20px;
     }
-    .clients-inner,.clients-inner,.about-company-inner{
+    .clients-inner,.clients-inner,.about-company-inner, .services-page-about-services-inner{
         padding: 60px 20px;
     }
     .about-our-company-inner{
@@ -21,7 +21,10 @@
     .main-inner{
         padding: 85px 20px;
     }
-    .certificate-inner, .benefits-inner, .services-inner,.contacts-page-inner{
+    .certificate-inner, .benefits-inner, .services-inner{
+        padding: 60px 20px;
+    }
+    .contacts-page-inner{
         padding: 60px 20px;
     }
     .certificate-item{
@@ -29,6 +32,12 @@
     }
     .footer-inner{
         padding: 60px 20px;
+    }
+    .catalog-inner{
+        padding: 40px 20px;
+    }
+    .catalog-content-inner{
+        padding: 30px 20px;
     }
 }
 
@@ -51,6 +60,7 @@
     }
     .about-company-inner{
         padding: 100px 20px;
+        display: block;
     }
     .benefits-cards{
         display: grid;
@@ -61,16 +71,31 @@
     .services-cards{
         grid-template-columns: auto;
     }
+    .clients-cards{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    .client-card-item:nth-child(13){
+        grid-column-end: auto;
+    }
+    .client-card-item:nth-child(12){
+        grid-column-end: auto;
+    }
+    .client-card-item:nth-child(11){
+        grid-column-end: auto;
+    }
     .footer-nav-menu li{
         display: block;
         padding-bottom: 10px;
     }
-    .about-our-company-inner{
+    .about-our-company-main-inner{
         display: grid;
         justify-content: center;
     }
     .services-page-about-services-container{
         grid-template-columns: auto;
+        gap: 30px;
     }
     .services-page-page-services-icons{
         padding-left: 70px;
@@ -84,11 +109,30 @@
 }
 
 @media (max-width: 580px){
+    .about-company-our-inner{
+        padding: 100px 20px;
+    }
     .about-img-block{
         padding-right: 0;
     }
-    .about-img-block img{
+    .block-img-content img{
         width: 100%;
+        padding-left: 20px;
+    }
+    img.about-image{
+        width: 100%;
+    }
+    .about-img-text-wrapper{
+        top: 20%;
+        left: 5%;
+    }
+    .clients-cards{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    p.company-age{
+        font-size: 35px;
     }
     .main-title, .about-company-title, .services-page-title{
         font-size: 36px;
@@ -117,7 +161,19 @@
     }
     .footer-inner{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
+    }
+    .footer-contact-link{
+        padding-left: 30px;
+    }
+    .footer-contact-link::before{
+        left: 0;
+    }
+    .footer-contacts{
+        padding: 15px 0;
+    }
+    p.services-page-service-icon{
+        font-size: 20px;
     }
     .modal-inner-container{
         padding: 41px 30px;
@@ -127,19 +183,6 @@
 @media (max-width: 375px){
     .main-title{
         font-size: 30px;
-    }
-    .footer-inner{
-        grid-template-columns: auto;
-        justify-content: center;
-    }
-    .footer-contact-link{
-        padding-left: 25px;
-    }
-    .footer-contact-link::before{
-        left: 0;
-    }
-    .footer-contacts{
-        padding: 15px 0;
     }
     .modal-inner-container{
         padding: 41px 15px;
